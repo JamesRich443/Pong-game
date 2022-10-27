@@ -13,8 +13,8 @@ screen.tracer(0)
 
 
 
-r_board=Board((350,0))
-l_board=Board((-350,0,))
+r_board=Board((350,0),'white')
+l_board=Board((-350,0), 'red')
 ball= Ball()
 screen.listen()
 screen.onkey(r_board.up,"Up")
@@ -35,3 +35,4 @@ while on:
 
 
 screen.exitonclick()
+
